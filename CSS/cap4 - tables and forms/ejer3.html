@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Forms</title>
+	<style type="text/css">
+
+		fieldset{
+			width: 250px;
+			border: 2px solid #FFD8D8;
+			border-radius: 5px;
+			padding: 15px;
+		}
+		legend{
+			text-transform: uppercase;
+			border: 1px solid #50595c;
+			border-radius: 5px;
+			padding: 7px;
+			background-color: #ffd8d8;
+			font-weight: bold;
+			color: #302939;
+			text-shadow: 1px 1px 10px #265961;
+		}
+		label{
+			display: block;
+			margin-bottom: 10px;
+		}
+		input{
+			border: 1px solid #FFD8D8;
+			
+			border-radius: 5px;
+		}
+		input.submit{
+			margin-left:  155px;
+			margin-top: 5px;
+			border-radius: 5px;
+			color: #ffd8d8;
+			background-color: #302939; 
+			padding: 3px 12px 3px 12px; 
+		}
+		input:hover, input:focus{
+			background-color:  #265961;
+			border: 1px solid #e99b9b; 
+			color: white; 
+		}
+		input.submit:hover{
+			background-color: #265961;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Newsletter</legend>
+			<label>
+				Name: <input type="text" name="name" />
+			</label>
+			<label>
+				Email: <input type="text" name="email" />
+			</label>
+			<input type="submit" name="submit" class="submit" />
+		</fieldset>
+	</form>
+
+</body>
+</html>

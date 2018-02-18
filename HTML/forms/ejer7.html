@@ -1,0 +1,48 @@
+<html>
+	<style>
+		.single-box{
+			margin:5px;
+		}
+		.multi-text-box{
+			width:250px;
+			height:100px;
+		}
+	</style>
+	<head>
+		<title>Forms</title>
+	</head>
+	<body>
+		<form action="http://www.example.com/" method="get">
+			<fieldset>
+				<legend>Your Details:</legend>
+				<label>Name: <input type="text" name="name" class="single-box" /></label><br />
+				<label>Email: <input type="email" name="email"  class="single-box" /></label>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>Your Review:</legend>
+				<p><label>How did you hear about us ?</label>
+					<select name="referrer" id="hear-about">
+						<option value="google">Google</option>
+						<option value="friend">Friend</option>
+						<option value="advert">Advert</option>
+						<option value="other">Other</option>
+					</select>
+					</p>
+					<p><label>Would you visit again?</label><br />
+					<input id="yes" type="radio" name="visit-again" value="y" checked />
+					<label for="yes">Yes</label>
+					<input id="no" type="radio" name="visit-again" value="n" />
+					<label for ="no">No</label>
+					<input id="maybe" type="radio" name="visit-again" value="m" />
+					<label for ="maybe">Maybe</label></p>
+					<p><label>Comments:</label><br />
+					<textarea class="multi-text-box"></textarea></p>
+					<input type="checkbox" name="subscribe" value="yes" checked/>
+					<label>Sign me up for email updates</label><br />
+					<input type="submit" value="Submit Review" />
+					
+			</fieldset>
+		</form>	
+	</body>
+</html>

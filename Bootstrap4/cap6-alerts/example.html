@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap4 Alerts</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Alert Messages</h2>
+        <p>Bootstrap 4 proporciona mensajes de alerta.</p>
+        <p>Los mensajes de alerta son creados con la clase <code>.alert</code>, seguido de una de estas clases: <code>alert-primary</code>, <code>alert-info</code>, <code>alert-secondary</code>, <code>alert-success</code>, <code>alert-warning</code>, <code>alert-danger</code>, <code>alert-dark</code>, <code>alert-light</code>.</p>
+
+        <div class="alert alert-primary">
+            <b>Primary!</b> Esta caja de alerta indica una acci&oacuten importante. 
+        </div>
+        <div class="alert alert-success">
+            <b>Success!</b> Esta caja de alerta indica una acci&oacuten exitosa.
+        </div>
+        <div class="alert alert-info">
+            <b>Info!</b> Esta caja de alerta contiene alguna informaci&oacuten.
+        </div>
+        <div class="alert alert-warning">
+                <b>Warning!</b> Esta caja de alerta contiene una advertencia.
+        </div>
+        <div class="alert alert-danger">
+                <b>Danger!</b> Esta caja de alerta indica peligro o una potencial acci&oacuten negativa.
+        </div>
+        <div class="alert alert-dark">
+                <b>Dark!</b> Esta caja de alerta es de color gris.
+        </div>
+        <div class="alert alert-light">
+                <b>Light!</b> Esta caja de alerta es de color ligero.
+        </div>
+        <h2>Alert Links</h2>
+        <p>Agregando la clase <code>.alert-link</code> cualquier elemento a dentro de la caja de alerta tendra un estilo acorde a la caja de alerta.</p>
+        <div class="alert alert-primary">
+                <b>Primary!</b> Esta caja de alerta indica una acci&oacuten importante. <a href="#" class="alert-link">link</a> 
+            </div>
+            <div class="alert alert-success">
+                <b>Success!</b> Esta caja de alerta indica una acci&oacuten exitosa. <a href="#" class="alert-link">link</a>
+            </div>
+            <div class="alert alert-info">
+                <b>Info!</b> Esta caja de alerta contiene alguna informaci&oacuten. <a href="#" class="alert-link">link</a>
+            </div>
+            <div class="alert alert-warning">
+                    <b>Warning!</b> Esta caja de alerta contiene una advertencia. <a href="#" class="alert-link">link</a>
+            </div>
+            <div class="alert alert-danger">
+                    <b>Danger!</b> Esta caja de alerta indica peligro o una potencial acci&oacuten negativa. <a href="#" class="alert-link">link</a>
+            </div>
+            <div class="alert alert-dark">
+                    <b>Dark!</b> Esta caja de alerta es de color gris. <a href="#" class="alert-link">link</a>
+            </div>
+            <div class="alert alert-light ">
+                    <b>Light!</b> Esta caja de alerta es de color ligero. <a href="#" class="alert-link">link</a>
+            </div>
+            <h2>Closing Alerts</h2>
+            <p>Para poder cerrar un alert message se debe agregar la clase <code>.alert-dimissable</code> y un elemento <b>bot&oacuten</b>. Luego establecer los atributos del <b>bot&oacuten</b> con los siguientes valores: class="close" y data-dismiss="alert". </p>
+            <div class="alert alert-success alert-dimissable">
+                <button type="button" class="close" data-dismiss="alert">&times</button>
+                Presione X para cerrar este mensaje de alerta. <br> <b>Tip:</b> Es recomendable usar &amptimes en lugar de X.
+            </div>
+            <h2>Animated Alerts</h2>
+            <p>Las clases <code>.fade</code> y <code>.show</code> agregan un efecto de desvanicimiento cuando se cierra el mensaje de alerta.</p>
+            <div class="alert alert-warning alert-dimissable fade show">
+                <button type="button" class="close" data-dismiss="alert">&times</button>
+                Presione X para cerrar este mensaje.
+            </div>
+    </div>
+    
+</body>
+</html>

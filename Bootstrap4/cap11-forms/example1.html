@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+             
+</head>
+<body>
+    <div class="container">
+        <h2>Stacked Form</h2>
+        <p>Los controles de formularios tienen 100% de width. Esto se logra agregando la clase <code>.form-control</code> a los <b>inputs</b> y la clase <code>.form-group</code> al elemento <b>div</b> contenedor de cada input. Para los checkbox, la clase <code>.form-check-input</code> y <code>form-check-label</code> y la clase <code>.form-check</code> para su contenedor</p>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Ingrese su email" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Contrase&ntildea:</label>
+                <input class="form-control" type="password" name="password" id="pwd" placeholder="Ingrese su contraseña" required>
+            </div>
+
+            <div class="form-check">
+                <label for="recordar" class="form-check-label">
+                    <input type="checkbox" name="recordarme" class="form-check-input" id="recordar" >Recordarme
+                </label>
+            </div>
+            <input type="submit" class="btn btn-primary" name="submit" value="Enviar">
+        </form>
+        <hr>
+        <h2>Inline Form</h2>
+        <p>Todos los elementos est&aacuten en linea y con alineaci&oacuten a la izquierda.Agregando la clase <code>.form-inline</code> al elemento form.</p>
+
+       
+        <form action="/action_page.php" class="form-inline">
+            <label>
+                Nombre: <input class="form-control" type="email" name="email" id="emai">
+            </label>
+            
+            <label for="pwd">
+                Contrase&ntildea: <input class="form-control" type="password" name="password" id="pwd">
+            </label>
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="recordarme" value="si" id="recordame">Recordame
+                </label>
+            </div>
+            <input type="submit" name="submit" value="Enviar" class="btn btn-primary">
+
+        </form>
+    </div>
+</body>
+</html>
