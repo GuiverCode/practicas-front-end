@@ -1,0 +1,39 @@
+<!--Reglas de precedencia-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introducing CSS</title>
+        <style type="text/css">
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                font-family: "Courier New";
+            }
+            p{
+                font-size: 75%;
+            }
+            h1+p{
+                font-size: 100%;
+            }
+            i{
+                color: red;
+            }
+            i{
+                color: blue;
+            }
+            p b{
+                color: black;
+            }
+            p b{
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Potatos</h1>
+        <p >There are <i>dozens</i> of different <b>potato</b> varieties.</p>
+        <p>They are usually desribed as early, second early and maincrop potatoes.</p>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS forms</title>
+	<style type="text/css">
+		input{
+			margin-top:10px ;
+			background-color: white;
+			border-radius: 5px;
+			border-color: #B2B4B7;
+			display: block;
+			background-repeat: no-repeat;
+			padding: 2px 1px 2px 1px; 
+		}
+		input#email{
+			background-image: url("images/email.png");
+		}
+		input#twitter{
+			background-image: url("images/twitter_logo.png");
+		}
+		input#web{
+			background-image: url("images/web.png");
+		}
+		input:hover, input:focus{
+			background-color: #ffffff;
+			border: 1px solid #b1e1e4;
+			
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<input type="text" name="email" id="email" />
+	
+		<input type="text" name="twitter" id="twitter" />
+
+		<input type="text" name="web" id="web" />
+	</form>
+</body>
+</html>
