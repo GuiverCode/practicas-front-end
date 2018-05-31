@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Forms</title>
+	</head>
+	<body>
+		<form action="http://www.example.com/profile.php">
+			<p>Please select your favorite genre:</p>
+			<label><input type="radio" name="genre" value="rock"
+				checked="checked"/>Rock</label>
+			<label><input type="radio" name="genre" value="pop"/>Pop</label>
+			<label><input type="radio" name="genre" value="jazz">Jazz</label>
+			<p>Please select your favorite music service(s)</p>
+			<label><input type="checkbox" name="service" value="itunes"
+				checked/>iTunes</label>
+			<label><input type="checkbox" name="service" value="lastfm"/>Last.fm
+			</label>
+			<label><input type="checkbox" name="service" value="spotify"/>Spotify
+			</label>
+			<p>What device do you listen to music on?</p>
+			<select name="devices">
+				<option value="ipod">iPod</option>
+				<option value="radio">Radio</option>
+				<option value="computer">Computer</option>
+			</select>
+			<p>Do you play any of the following instruments?</p>
+			<select name="instruments" size="3"  multiple>
+				<option value="guitar" selected>Guitar</option>
+				<option value="drums">Drums</option>
+				<option value="keyboard">Keyboard</option>
+				<option value="bass">Bass</option>
+			</select>
+		</form>
+	</body>
+</html>

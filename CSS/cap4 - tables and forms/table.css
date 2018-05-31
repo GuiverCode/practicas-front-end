@@ -1,0 +1,24 @@
+th{
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border-top: 1px solid grey;
+	border-bottom: 2px solid black;
+	font-size: 90%
+}
+
+th, td{
+	padding: 5px;
+}
+
+tr.par{
+	background-color: #ECCDCD;
+}
+
+td.number{
+	text-align: right;
+}
+
+tr:hover{
+	background-color: #ADC0EC;
+}

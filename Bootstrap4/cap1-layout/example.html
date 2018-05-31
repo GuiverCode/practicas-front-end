@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Layout</title>
+    <style type="text/css">
+        .columna{
+            border: 1px solid black;
+            background-color: beige;
+            color: darkslategray;
+            text-align: center;
+        }
+        div.row{
+            margin-top: 15px;
+        }
+        h1{
+           font-size: 140%
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>"col"</h1>
+        <p>Asigna igual ancho a todas las columnas.</p>
+        <div class="row">
+            <div class="col columna">columna 1</div>
+            <div class="col columna">columna 2</div>
+            <div class="col columna">columna 3</div>
+        </div>
+        <h1>"col-xs"</h1>
+        <p>Extra small devices.</p>
+        <div class="row">
+        
+            <div class="col-xs-4 columna">columna 1</div>
+            <div class="col-xs-4 columna">columna 2</div>
+            <div class="col-xs-4 columna">columna 3</div>            
+        </div>
+        <h1>"col-sm"</h1>
+            <p>Apila las columnas una encima de otra cuando la ventana del navegador tiene menos de 576px.</p>
+        <div class="row">
+             
+            <div class="col-sm-4 columna">columna 1</div>
+            <div class="col-sm-4 columna">columna 2</div>
+            <div class="col-sm-4 columna">columna 3</div>
+        </div>
+        <h1>"col-md"</h1>
+            <p>Apila las columnas una encima de otra cuando la ventana del navegador tiene menos de 768px.</p>
+        <div class="row">
+            
+            <div class="col-md-4 columna">columna 1</div>
+            <div class="col-md-4 columna">columna 2</div>
+            <div class="col-md-4 columna">columna 3</div>            
+        </div>
+        <h1>"col-lg"</h1>
+        <p>Apila las columnas una encima de otra cuando la ventana del navegador tiene menos de 992px.</p>
+        <div class="row">
+        
+            <div class="col-lg-4 columna">columna 1</div>
+            <div class="col-lg-4 columna">columna 2</div>
+            <div class="col-lg-4 columna">columna 3</div>            
+        </div>
+        <h1>"col-xl"</h1>
+        <p>Apila las columnas una encima de otra cuando la ventana del navegador tiene menos de 1200px.</p>
+        <div class="row">
+    
+            <div class="col-xl-4 columna">columna 1</div>
+            <div class="col-xl-4 columna">columna 2</div>
+            <div class="col-xl-4 columna">columna 3</div>            
+        </div>    
+    </div>
+</body>
+</html>

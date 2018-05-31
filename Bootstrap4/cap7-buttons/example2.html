@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap4 Buttons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Button Groups</h2>
+        <p>La clase <code>.btn-group</code> dentro de un <b>div</b> permite agrupar botones.</p>
+        <div class="btn-group">
+            <button class="btn btn-primary">Apple</button>
+            <button class="btn btn-primary">Samsung</button>
+            <button class="btn btn-primary">Sony</button>
+        </div> <hr>
+        <h2>Vertical Button Groups</h2>
+        <p>La clase <code>.btn-group-vertical</code> permite agrupar botones de forma Vertical</p>
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary">Apple</button>
+            <button class="btn btn-primary">Samsung</button>
+            <button class="btn btn-primary">Sony</button>
+        </div><hr>
+        <h2>Nesting Button Groups & Dropdown Menus</h2>
+        <p>Anidando varios btn-group se puede crear menus desplegables.</p>
+        <div class="btn-group">
+            <button class="btn btn-primary">Apple</button>
+            <button class="btn btn-primary">Samsung</button>
+            <!-- boton que contendra una lista desplegable-->
+            <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+                <!--lista desplegable-->
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Tablet</a>
+                    <a href="#" class="dropdown-item">Smarthphone</a>
+                </div>
+            </div>
+        </div><hr>
+        <h2>Split Button Dropdowns</h2>
+        <div class="btn-group">
+            <button class="btn btn-primary">Sony</button>
+            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><span class="caret"></span></button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Tablet</a>
+                <a href="#" class="dropdown-item">Smarthphone</a>
+            </div>
+        </div><hr>
+        <h2>Vertical Button Groups w/ Dropdown</h2>
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary">Apple</button>
+            <button class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Tablet</a>
+                    <a href="#" class="dropdown-item">Smarthphone</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

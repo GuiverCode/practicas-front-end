@@ -1,0 +1,30 @@
+<!-- :link, :visited, :hover, :focus, :active-->
+<html>
+    <head>
+        <style>
+            input{
+                padding: 6px 12px 6px 12px;
+                border: 1px solid #665544;
+            }
+            input.btn:hover{
+                background-color: 665544;
+
+            }
+            input.btn:active{
+                background-color: gray;
+            }
+            input.txt_box{
+                color: #cccccc;
+            }
+            input.txt_box:focus{
+                color: #665544;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://www.example.com/profile.php" method="post">
+            <input class="txt_box"type="email" name="email" placeholder="enter a email address..." />
+            <input type="submit" name="submit" class="btn"/>
+        </form>
+    </body>
+</html>

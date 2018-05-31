@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Bootstrap4 Cards</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cards</h2>
+        <p>Un card es una caja bordeada a su alrededor y con un poco de padding.</p>
+        <p>Un card basico es creado con un contenedor padre con la clase <code>.card</code> y contenedor hijo con la clase <code>.card-body</code></p>
+        <!--contenedor padre-->
+        <div class="card">
+            <!--contenedor hijo-->
+            <div class="card-body">
+                Basic Card
+            </div>
+        </div><hr>
+        <h2>Header and footer</h2>
+        <div class="card">
+            <div class="card-header ">Cabecera</div>
+            <div class="card-body">Cuerpo</div>
+            <div class="card-footer ">Pie</div>
+        </div>
+        <hr>
+        <h2>Titles, text, and links</h2>
+        <p>La clase <code>.card-title</code> es utilizado con cualquier elemento <b>&lth&gt</b>. La clase <code>.card-text</code> es utilizado con cualquier elemento <b>&ltp&gt</b>. La clase <code>.card-link</code> es utilizado con cualquier elemento <b>&lta&gt</b>.</p>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-text">Some text here.</p>
+                <a href="#" class="card-link">Card Link</a>
+                
+            </div>
+        </div><hr>
+        <h2>Card Images</h2>
+        <p>La clase <code>.card-img-top</code> agrega la imagen en la cabecera del card y la clase <code>.card-img-bottom</code> agrega la imagen en el pie del card. <span class="text-warning">No se utiliza header ni footer.</span></p>
+        <div class="card" style="width:350px"> 
+            <img src="avatar.png" alt="avatar" class="card-img-top img-fluid" />
+            <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text. Jhon is an architect and engineer.</p>
+                <a href="#" class="btn btn-primary" role="button">See Profile</a>
+            </div>
+
+        </div>
+        <br>
+        <div class="card" style="width:350px">
+            <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text. Jhon is an architect and engineer.</p>
+                    <a href="#" class="btn btn-primary" role="button">See Profile</a>
+        </div>
+        <img src="avatar.png" alt="avatar" class="card-img-bottom"/>
+    </div>
+    
+</body>
+</html>
