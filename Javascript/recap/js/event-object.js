@@ -9,6 +9,7 @@ $(document).ready(function(){
         //remueve span (para que no se acumulen)
         //$list.children('span').remove();
         $('li span').remove();
+        //prueba
 
         $(this).append('<span class="date"> ' + date.toDateString() + ' '+ type+ '</span>');
 
