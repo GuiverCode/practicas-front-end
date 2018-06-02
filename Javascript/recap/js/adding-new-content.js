@@ -15,8 +15,3 @@ if (items.length > 0) {
         items[i].innerHTML = '+ ' + items[i].innerHTML;
     }
 }
-
-var elUl = document.querySelector('ul');
-var newP = document.createElement('p');
-newP.textContent = 'Just updated';
-elUl.previousElementSibling.insertAdjacentElement(newP);
