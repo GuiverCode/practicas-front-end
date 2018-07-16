@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--componentes en Vue-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejer7 -Vue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app-7">
+        <ol>
+            <!--
+                Crea una instancia de todo-item y a c/ componente lo vincula
+                con un objeto todo
+            -->
+            <todo-item 
+            v-for = "item in groceryList" 
+            v-bind:todo = "item" 
+            v-bind:key = "item.id"></todo-item>
+        </ol>
+    </div>
+    <script src="scripts/ejer7.js"></script>
+</body>
+</html>
