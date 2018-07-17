@@ -6,6 +6,7 @@ var vm = new Vue({
     },
     methods: {
         cambiar : function(){
+            //cambia de estado
             this.esActivo = !this.esActivo
             this.esInactivo = !this.esInactivo
         }
