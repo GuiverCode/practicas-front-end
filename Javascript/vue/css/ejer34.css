@@ -1,0 +1,19 @@
+li span {
+    width: 150px;
+    display: inline-block
+
+}
+
+#app34{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.02em;
+    color: darkslategray
+}
+
+ul label{
+    
+    display: block;
+    font-size: 1.05em
+}

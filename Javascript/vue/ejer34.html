@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- v-for con components  -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejer34 - Vue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="css/ejer34.css" media="screen" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app34">
+        <form v-on:submit.prevent = "agregar">
+            <label>Agregar tarea</label>
+            <input v-model="nuevaTarea" placeholder="Ej: limpiar el patio">
+            <button>Agregar</button>
+        </form>
+        <ul>
+            <label>Lista de tareas</label>
+            <li is="lista-tarea" 
+            v-for="(tarea, index) in tareas"
+            v-bind:tarea = "tarea"
+            v-bind:index = "index"
+            v-bind:key = "tarea.id"
+            v-on:borrar="tareas.splice(index,1)"></li>
+        </ul>
+        
+    </div>
+    <script src="scripts/ejer34.js"></script>
+</body>
+</html>
