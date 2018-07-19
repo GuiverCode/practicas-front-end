@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- v-model con diferentes inputs  -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejer37 - Vue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app37">
+        <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+        <label for="mike">Mike</label>
+        <input type="checkbox" id="jhon" value="Jhon" v-model="checkedNames">
+        <label for="mike">Jhon</label>
+        <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+        <label for="Jack">Mike</label>
+        <p>Seleccionaste: {{checkedNames}}</p>
+        <input type="radio" value="Uno" id="uno" v-model="checkedRadio">
+        <label for="uno">Uno</label> <br>
+        <input type="radio" value="Dos" id="dos" v-model="checkedRadio">
+        <label for="dos">Dos</label>
+        <p>Seleccionaste: {{checkedRadio}}</p>
+        <select v-model="selected">
+            <option disabled value="">Por favor selecciona una opcion</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+        </select>
+        <p>Seleccionaste: {{selected}}</p>
+        
+    </div>
+    <script src="scripts/ejer37.js"></script>
+</body>
+</html>
